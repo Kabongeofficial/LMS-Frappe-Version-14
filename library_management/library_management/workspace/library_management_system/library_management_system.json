@@ -1,0 +1,76 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"UxMRwmc-Ma\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library Management System</span>\",\"col\":12}},{\"id\":\"hLE_F0ulzZ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add an Article\",\"col\":3}},{\"id\":\"-es8CRc956\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Register Attandance\",\"col\":3}},{\"id\":\"xBkczvRDMc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Transaction\",\"col\":3}},{\"id\":\"cBqwmSGHiu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add New Library Member\",\"col\":3}},{\"id\":\"cOfES9t8h4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create Membership\",\"col\":3}}]",
+ "creation": "2023-10-20 10:14:20.599077",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "file-large",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Library Management System",
+ "links": [],
+ "modified": "2023-10-20 11:46:04.617746",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Management System",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Librarian"
+  },
+  {
+   "role": "Library Member"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Add an Article",
+   "link_to": "Article",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Register Attandance",
+   "link_to": "Library Attendance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Create Transaction",
+   "link_to": "Library Transaction",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Add New Library Member",
+   "link_to": "Library Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Create Membership",
+   "link_to": "Library Membership",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library Management System"
+}
