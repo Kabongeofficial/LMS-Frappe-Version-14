@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
 
-class LibraryTransaction(Document):
+class ArticleTransaction(Document):
     def before_submit(self):
         if self.type == 'Issue':
             self.validate_issue()

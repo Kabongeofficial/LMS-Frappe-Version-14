@@ -60,7 +60,7 @@
  "modified": "2023-10-19 14:30:05.719452",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Transaction",
+ "name": "Article Transaction",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
