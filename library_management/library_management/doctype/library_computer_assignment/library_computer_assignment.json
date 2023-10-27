@@ -1,75 +1,107 @@
 {
- "actions": [],
- "allow_rename": 1,
- "creation": "2023-10-26 11:54:09.842429",
- "default_view": "List",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "library_computer",
-  "library_no",
-  "library_member",
-  "amended_from"
- ],
- "fields": [
-  {
-   "fetch_from": "library_computer.computer_no",
-   "fieldname": "library_no",
-   "fieldtype": "Data",
-   "label": "Library No"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Library Computer Assignment",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "library_computer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Library Computer",
-   "options": "Library Computer",
-   "reqd": 1
-  },
-  {
-   "fieldname": "library_member",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Library Member",
-   "options": "Library Member",
-   "reqd": 1
-  }
- ],
- "index_web_pages_for_search": 1,
- "is_submittable": 1,
- "links": [],
- "modified": "2023-10-26 12:00:10.106163",
- "modified_by": "Administrator",
- "module": "Library Management",
- "name": "Library Computer Assignment",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1
-}
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2023-10-26 11:54:09.842429",
+    "default_view": "List",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+       "name",
+       "library_computer",
+       "computer_no",
+       "column_break_mucrq",
+       "library_member",
+       "assignment_time",
+       "amended_from"
+    ],
+    "fields": [
+       {
+          "fieldname": "name",
+          "fieldtype": "Data",
+          "label": "Name",
+          "reqd": 1,
+          "unique": 1
+       },
+       {
+          "fieldname": "amended_from",
+          "fieldtype": "Link",
+          "label": "Amended From",
+          "no_copy": 1,
+          "options": "Library Computer Assignment",
+          "print_hide": 1,
+          "read_only": 1
+       },
+       {
+          "fieldname": "library_computer",
+          "fieldtype": "Link",
+          "in_list_view": 1,
+          "label": "Library Computer",
+          "options": "Library Computer",
+          "reqd": 1
+       },
+       {
+          "fieldname": "library_member",
+          "fieldtype": "Link",
+          "in_list_view": 1,
+          "label": "Library Member",
+          "options": "Library Member",
+          "reqd": 1
+       },
+       {
+          "fieldname": "assignment_time",
+          "fieldtype": "Datetime",
+          "label": "Assignment Time"
+       },
+       {
+          "fieldname": "column_break_mucrq",
+          "fieldtype": "Column Break"
+       },
+       {
+          "fetch_from": "library_computer.computer_no",
+          "fieldname": "computer_no",
+          "fieldtype": "Data",
+          "label": "Computer No"
+       }
+    ],
+    "index_web_pages_for_search": 1,
+    "is_submittable": 1,
+    "links": [],
+    "modified": "2023-10-26 15:08:43.316631",
+    "modified_by": "Administrator",
+    "module": "Library Management",
+    "name": "Library Computer Assignment",
+    "owner": "Administrator",
+    "permissions": [
+       {
+          "create": 1,
+          "delete": 1,
+          "email": 1,
+          "export": 1,
+          "print": 1,
+          "read": 1,
+          "report": 1,
+          "role": "System Manager",
+          "share": 1,
+          "write": 1
+       },
+       {
+          "create": 1,
+          "delete": 1,
+          "email": 1,
+          "export": 1,
+          "print": 1,
+          "read": 1,
+          "report": 1,
+          "role": "Library IT",
+          "share": 1,
+          "write": 1
+       }
+    ],
+    "quick_entry": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
+ }
+ 

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "computer_no",
  "creation": "2023-10-26 11:14:38.433957",
  "default_view": "List",
  "doctype": "DocType",
@@ -26,10 +27,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-26 11:52:13.688633",
+ "modified": "2023-10-27 07:57:16.462776",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Computer",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
