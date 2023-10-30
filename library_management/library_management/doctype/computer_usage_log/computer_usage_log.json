@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CUL00000",
+ "creation": "2023-10-30 08:52:40.636591",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "computer_assignment",
+  "section_break_dazxa",
+  "computer_no",
+  "section_break_ykvoy",
+  "end_time",
+  "section_break_lyfof",
+  "release_computer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "computer_assignment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Computer Assignment",
+   "options": "Library Computer Assignment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "computer_assignment.computer_no",
+   "fieldname": "computer_no",
+   "fieldtype": "Data",
+   "label": "Computer No",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "release_computer",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Release Computer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Computer Usage Log",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_dazxa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lyfof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ykvoy",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-30 09:12:29.375295",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "color": "#3498db",
+ "name": "Computer Usage Log",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library IT",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
