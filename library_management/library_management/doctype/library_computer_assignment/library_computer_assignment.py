@@ -24,6 +24,18 @@ class LibraryComputerAssignment(Document):
         if not valid_membership:
             frappe.throw(_('The member does not have a valid library membership.'))
 
+        # Check if there are available computers for assignment
+        available_computers = frappe.get_all(
+            'Library Computer',
+            filters={
+                'assignment_status': 'Available',
+            },
+            fields=['name']
+        )
+
+        if not available_computers:
+            frappe.throw(_('The selected Computer is already assigned to another Member.'))
+
         # Ensure that each member is assigned only one computer
         assigned_computer = frappe.get_all(
             'Library Computer Assignment',
@@ -34,5 +46,16 @@ class LibraryComputerAssignment(Document):
             fields=['name']
         )
 
-        if assigned_computer and assigned_computer[0].name != self.name:
+        if assigned_computer:
             frappe.throw(_('This member is already assigned a computer. Only one assignment per member is allowed.'))
+
+        # Assign the computer
+        assigned_computer = available_computers[0]
+        assigned_computer_doc = frappe.get_doc('Library Computer', assigned_computer.name)
+
+        if assigned_computer_doc.assignment_status != 'Available':
+            frappe.throw(_('The selected computer is already assigned.'))
+
+        assigned_computer_doc.assignment_status = 'Assigned'
+        assigned_computer_doc.library_member = self.library_member  # Link the computer to the library member
+        assigned_computer_doc.save()
