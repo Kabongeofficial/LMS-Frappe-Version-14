@@ -42,7 +42,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Library Transaction",
+   "options": "Article Transaction",
    "print_hide": 1,
    "read_only": 1
   },
@@ -57,7 +57,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-19 14:30:05.719452",
+ "modified": "2023-10-30 15:01:45.005316",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article Transaction",
@@ -77,6 +77,8 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -86,6 +88,7 @@
    "report": 1,
    "role": "Librarian",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

@@ -1,0 +1,65 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Cp8zSP8kMf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library Management for Librarian</span>\",\"col\":12}},{\"id\":\"vrYoFyLWkJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Make Article Transaction\",\"col\":3}},{\"id\":\"ycJgCVYwz7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Register Membership\",\"col\":3}},{\"id\":\"7uUdkOpmpF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Register New Member\",\"col\":3}},{\"id\":\"76ks4zIrZA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add Available Articles\",\"col\":3}}]",
+ "creation": "2023-10-30 14:31:54.897655",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "file-large",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Library Management for Librarian",
+ "links": [],
+ "modified": "2023-10-30 14:49:41.485280",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Management for Librarian",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Librarian"
+  }
+ ],
+ "sequence_id": 24.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Make Article Transaction",
+   "link_to": "Article Transaction",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Register Membership",
+   "link_to": "Library Membership",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Register New Member",
+   "link_to": "Library Member",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Add Available Articles",
+   "link_to": "Article",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library Management for Librarian"
+}

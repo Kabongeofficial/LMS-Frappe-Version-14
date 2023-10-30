@@ -1,0 +1,41 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"DP2RoWbhUH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library Management System for Receptionist</span>\",\"col\":12}},{\"id\":\"XNjiCUK6t3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Register Library Attendance\",\"col\":3}}]",
+ "creation": "2023-10-30 14:47:53.006311",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "file-large",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Library Management System for Receptionist",
+ "links": [],
+ "modified": "2023-10-30 14:50:46.807101",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Management System for Receptionist",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "receptionist"
+  }
+ ],
+ "sequence_id": 26.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Register Library Attendance",
+   "link_to": "Library Attendance",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library Management System for Receptionist"
+}
